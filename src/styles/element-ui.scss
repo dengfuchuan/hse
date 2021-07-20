@@ -1,0 +1,200 @@
+// cover some element-ui styles
+
+.el-breadcrumb__inner,
+.el-breadcrumb__inner a {
+  font-weight: 400 !important;
+}
+
+.el-upload {
+  input[type="file"] {
+    display: none !important;
+  }
+}
+
+.el-upload__input {
+  display: none;
+}
+
+.cell {
+  .el-tag {
+    margin-right: 0px;
+  }
+}
+
+.small-padding {
+  .cell {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+
+.fixed-width {
+  .el-button--mini {
+    padding: 7px 10px;
+    min-width: 60px;
+  }
+}
+
+.status-col {
+  .cell {
+    padding: 0 10px;
+    text-align: center;
+
+    .el-tag {
+      margin-right: 0px;
+    }
+  }
+}
+
+// to fixed https://github.com/ElemeFE/element/issues/2461
+.el-dialog {
+  transform: none;
+  left: 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+// refine element ui upload
+.upload-container {
+  .el-upload {
+    width: 100%;
+
+    .el-upload-dragger {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}
+
+// dropdown
+.el-dropdown-menu {
+  a {
+    display: block;
+  }
+}
+
+// fix date-picker ui bug in filter-item
+.el-range-editor.el-input__inner {
+  display: inline-flex !important;
+}
+
+// to fix el-date-picker css style
+.el-range-separator {
+  box-sizing: content-box;
+}
+// table 样式
+.el-table__row {
+  font-size: 12px;
+}
+
+.el-table__header {
+  font-size: 12px;
+  color: #000;
+}
+
+.el-table th,
+.el-table td {
+  color: #000;
+  padding: 0px;
+}
+
+// 解决表头和表体对不齐
+.el-table th.gutter {
+  display: table-cell !important;
+}
+
+// .el-checkbox__input.is-checked .el-checkbox__inner {
+//   background-color: #42b983;
+//   border-color: #42b983;
+// }
+// .el-checkbox__input.is-checked .el-checkbox__inner {
+//   background-color: #42b983;
+//   border-color: #42b983;
+// }
+// .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+//   background-color: #42b983;
+//   border-color: #42b983;
+// }
+
+// .el-checkbox__input.is-focus .el-checkbox__inner {
+//   border-color: #42b983;
+// }
+
+// button样式
+.el-button--primary {
+  text-align: center;
+  line-height: 25px;
+  padding: 0px 10px;
+}
+//设置图标按钮宽度
+.el-button--text {
+  width: 20px;
+}
+// 自定义button
+.button {
+  color: #000;
+  background-color: #fff;
+}
+
+//设置el-dialog样式
+.el-dialog__body {
+  padding: 0px 20px;
+}
+.el-dialog__header {
+  padding: 10px 20px;
+}
+.el-dialog__footer {
+  padding: 10px 20px;
+}
+
+// 设置el-select样式
+.el-select {
+  width: 100%;
+}
+// .el-input--medium .el-input__inner {
+//   height: 26.8px;
+//   line-height: 26.8px;
+// }
+// .el-input--medium .el-input__icon {
+//   line-height: 26.8px;
+// }
+
+.el-tree .el-tree-node__expand-icon.expanded {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+//有子节点 且未展开
+.el-tree .el-icon-caret-right:before {
+  background: url("../assets/images/1.png") no-repeat;
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
+  background-size: 16px;
+}
+//有子节点 且已展开
+.el-tree .el-tree-node__expand-icon.expanded.el-icon-caret-right:before {
+  background: url("../assets/images/2.png") no-repeat 0 3px;
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
+  background-size: 16px;
+}
+//没有子节点
+.el-tree .el-tree-node__expand-icon.is-leaf::before {
+  background: url("../assets/images/3.png") no-repeat;
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  font-size: 16px;
+  background-size: 16px;
+}
+
+//设置 icon 的默认颜色
+.el-icon-folder-opened {
+  color: #f56c6c;
+}
